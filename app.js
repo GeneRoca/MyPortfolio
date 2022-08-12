@@ -1,0 +1,57 @@
+new fullpage('#portfolio', {
+    autoScrolling: true,
+    navigation: true,
+    navigationPosition: 'right',
+    sectionsColor: ['#010101', '#8bcfd0', '#1C2341', '#55BEC0', '#55BEC0', '#55BEC0', '#55BEC0', '#55BEC0', '#55BEC0'],
+    anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
+    fitToSection: false
+})
+
+var span = document.querySelector(".typewriter span");
+var textArr = span.getAttribute("data-text").split(", "); 
+var maxTextIndex = textArr.length; 
+
+var sPerChar = 0.10; 
+var sBetweenWord = 1.5;
+var textIndex = 0; 
+
+typing(textIndex, textArr[textIndex]); 
+
+function typing(textIndex, text) {
+    var charIndex = 0; 
+    var maxCharIndex = text.length - 1; 
+    
+    var typeInterval = setInterval(function () {
+        span.innerHTML += text[charIndex]; 
+        if (charIndex == maxCharIndex) {
+            clearInterval(typeInterval);
+            setTimeout(function() { deleting(textIndex, text) }, sBetweenWord * 1000); 
+            
+        } else {
+            charIndex += 1; 
+        }
+    }, sPerChar * 500); 
+}
+
+function deleting(textIndex, text) {
+    var minCharIndex = 0; 
+    var charIndex = text.length - 1; 
+
+    var typeInterval = setInterval(function () {
+        span.innerHTML = text.substr(0, charIndex); 
+        if (charIndex == minCharIndex) {
+            clearInterval(typeInterval);
+            textIndex + 1 == maxTextIndex ? textIndex = 0 : textIndex += 1; 
+            setTimeout(function() { typing(textIndex, textArr[textIndex]) }, sBetweenWord * 1000); 
+        } else {
+            charIndex -= 1; 
+        }
+    }, sPerChar * 500); 
+}
+
+/* Demo purposes only */
+$(".hover").mouseleave(
+function () {
+    $(this).removeClass("hover");
+  }
+);
