@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./fullpage.min.css"/>
     <link rel="stylesheet" href="./style.css"/>
-    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+    <link rel = "stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <title>Eugene Roca</title>
 </head>
 <body>
@@ -94,8 +96,6 @@
                 <h2 class="education-title-1">EDUCATION</h2>
                 <h2 class="education-title-2">EDUCATION</h2>
             </div>
-            <img src="./img/education-design.png" alt="education-design" class="education-design"/>
-            <img src="./img/education-design-2.png" alt="education-design-2" class="education-design-2"/>
             <ul class="cards">
                 <li>
                   <a class="card">
@@ -105,7 +105,7 @@
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
                         <img class="card__thumb" src="./img/pup-logo.png" alt="" />
                         <div class="card__header-text">
-                          <h3 class="card__title">Polytechnic University of the Philippines</h3> 
+                          <h4 class="card__title">Polytechnic University of the Philippines</h4> 
                           <span class="card__tagline">College School - BSCOE</span>            
                           <span class="card__status">Consistent President's Lister</span>
                         </div>
@@ -122,7 +122,7 @@
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
                         <img class="card__thumb" src="./img/srps-logo.png" alt="" />
                         <div class="card__header-text">
-                          <h3 class="card__title">San Rafael Parochial School</h3>
+                          <h4 class="card__title">San Rafael Parochial School</h3>
                           <span class="card__tagline">Senior High School - GAS</span> 
                           <span class="card__status">With High Honors</span>
                         </div>
@@ -139,7 +139,7 @@
                         <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
                         <img class="card__thumb" src="./img/tphs-logo.png" alt="" />
                         <div class="card__header-text">
-                          <h3 class="card__title">Timoteo Paez Integrated School</h3>
+                          <h4 class="card__title">Timoteo Paez Integrated School</h4>
                           <span class="card__tagline">Junior High School</span>            
                           <span class="card__status">Valedictorian</span>
                         </div>
@@ -148,52 +148,16 @@
                     </div>
                   </a>
                 </li>
-                <li>
-                  <a class="card">
-                    <img src="./img/nbbs.jpg" class="card__image" alt="" />
-                    <div class="card__overlay">
-                      <div class="card__header">
-                        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-                        <img class="card__thumb" src="./img/nbbs-logo.png" alt="" />
-                        <div class="card__header-text">
-                          <h3 class="card__title">North Bay Boulevard - South</h3>
-                          <span class="card__tagline">Elementary School</span>            
-                          <span class="card__status">Valedictorian</span>
-                        </div>          
-                      </div>
-                      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-                    </div>
-                  </a>
-                </li>    
               </ul>
+              
         </section>
         <section class="section s4">
-          <div class="project-title">
-            <h1 class="project-title-texts">PROJECTS</h1>
-            <h1 class="project-title-texts">PROJECTS</h1>
-          </div>
-          <ul class="circles">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-          </ul>
-          <div class="tear"></div>
-          <p class="project-p1">Here are some of the projects I created solo or in collaboration with my schoolmates throughout my stay in PUP.</p>
-          <p class="project-p1">Click any of these if you want to jump to a specific section, but if you want to see everything then feel free to scroll down.</p>
-        
+          
           <section class="cards-wrapper">
             <div class="card-grid-space">
               <a class="project-card" href="#fifthPage" style="background-image: url(./img/projects-website.jpg)">
                 <div>
                   <h1>Websites</h1>
-                  <p>The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p>
                   <div class="tags">
                     <div class="tag">HTML</div>
                   </div>
@@ -204,7 +168,6 @@
               <a class="project-card" href="#sixthPage" style="background-image: url(./img/projects-android.jpg)">
                 <div>
                   <h1>Android Apps</h1>
-                  <p>Learn about some of the most common HTML tags…</p>
                   <div class="tags">
                     <div class="tag">HTML</div>
                   </div>
@@ -215,7 +178,6 @@
               <a class="project-card" href="#seventhPage" style="background-image: url(./img/projects-game.jpg)">
                 <div>
                   <h1>Games</h1>
-                  <p>Learn how to use links and images along with file paths…</p>
                   <div class="tags">
                     <div class="tag">HTML</div>
                   </div>
@@ -226,7 +188,6 @@
               <a class="project-card" href="#eighthPage" style="background-image: url(./img/projects-others.jpg)">
                 <div>
                   <h1>Others</h1>
-                  <p>Learn how to use links and images along with file paths…</p>
                   <div class="tags">
                     <div class="tag">HTML</div>
                   </div>
@@ -234,57 +195,182 @@
               </a>
             </div>
           </section>
+            <div class="project-texts">
+              <div class="project-title">
+                <h1 class="project-title-texts">PROJECTS</h1>
+                <h1 class="project-title-texts">PROJECTS</h1>
+              </div>
+              <div class="tear"></div>
+              <p class="project-p1">Here are some of the projects I created solo or in collaboration with my schoolmates throughout my stay in PUP.</p>
+              <p class="project-p1">Click any of these if you want to jump to a specific section, but if you want to see everything then feel free to scroll down.</p>
+            </div>
         </section>
         <section class="section s5"  data-anchor="fifthPage">
           <div class="website-title">WEBSITE PROJECTS</div>
-          <img src="./img/website-bg.png" alt="website-bg" class="website-bg"></img>
+          <div class="website-grid">
+          <div class="blog-card spring-fever" style="background-image: url(./img/website-hamsterest.jpg); background-size: cover;">
+            <div class="title-content">
+              <h3><a href="#">HAMSTEREST</a></h3>
+              <div class="intro"> <a href="#">View Design Planning</a> </div>
+            </div>
+            <div class="card-info">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+              <a href="#">VIEW<span class="licon icon-arr icon-black"></span></a>
+            </div>
+            <div class="gradient-overlay"></div>
+            <div class="color-overlay"></div>
+          </div><!-- /.blog-card -->
+
+          <div class="blog-card spring-fever"  style="background-image: url(./img/website-sinceretea.jpg); background-size: cover;">
+            <div class="title-content">
+              <h3><a href="#">SINCERETEA</a></h3>
+              <div class="intro"> <a href="#">View Design Planning</a> </div>
+            </div>
+            <div class="card-info">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+              <a href="#">VIEW<span class="licon icon-arr icon-black"></span></a>
+            </div>
+            <div class="gradient-overlay"></div>
+            <div class="color-overlay"></div>
+          </div><!-- /.blog-card -->
+        </div>
+          
         </section>
         <section class="section s6"  data-anchor="sixthPage">
-          <div class="android-title">ANDROID APP PROJECTS</div>
-          <img src="./img/android-bg-2.png" alt="android-bg-2" class="android-bg-2"></img>
+          <div class="android-title">ANDROID APP PROJECT</div>
+          <div class="website-grid">
+            <div class="blog-card spring-fever" style="background-image: url(./img/android-ebrgy.jpg); background-size: cover;">
+              <div class="title-content">
+                <h3><a href="#">EBRGY</a></h3>
+                <div class="intro"> <a href="#">View Design Planning</a> </div>
+              </div>
+              <div class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                <a href="#">VIEW</a>
+              </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div><!-- /.blog-card -->
+          </div>
         </section>
         <section class="section s7"  data-anchor="seventhPage">
           <div class="game-title">GAME PROJECTS</div>
-          <img src="./img/game-bg-2.png" alt="game-bg-2" class="game-bg-2"></img>
+          <div class="website-grid">
+            <div class="blog-card spring-fever" style="background-image: url(./img/game-flappy.jpg); background-size: cover;">
+              <div class="title-content">
+                <h3><a href="#">FLAPPY BIRD</a></h3>
+              </div>
+              <div class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                <a href="#">VIEW</span></a>
+              </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div><!-- /.blog-card -->
+  
+            <div class="blog-card spring-fever" style="background-image: url(./img/game-arkanoid.jpg); background-size: cover;">
+              <div class="title-content">
+                <h3><a href="#">ARKANOID</a></h3>
+              </div>
+              <div class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                <a href="#">VIEW</span></a>
+              </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div><!-- /.blog-card -->
+
+            <div class="blog-card spring-fever" style="background-image: url(./img/game-crush.jpg); background-size: cover;">
+              <div class="title-content">
+                <h3><a href="#">CRUSH</a></h3>
+              </div>
+              <div class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                <a href="#">VIEW</span></a>
+              </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div><!-- /.blog-card -->
+  
+            <div class="blog-card spring-fever" style="background-image: url(./img/game-sidescrolling.jpg); background-size: cover;">
+              <div class="title-content">
+                <h3><a href="#">SIDE-SCROLLING</a></h3>
+              </div>
+              <div class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                <a href="#">VIEW</span></a>
+              </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div><!-- /.blog-card -->
+          </div>
         </section>
         <section class="section s8"  data-anchor="eighthPage">
           <div class="others-title">OTHERS</div>
-          <img src="./img/others-bg-2.png" alt="others-bg-2" class="others-bg-2"></img>
+          <div class="website-grid">
+            <div class="blog-card spring-fever" style="background-image: url(./img/others-wireframes.jpg); background-size: cover;">
+              <div class="title-content">
+                <h3><a href="#">WIREFRAMES</a></h3>
+              </div>
+              <div class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                <a href="#">VIEW</span></a>
+              </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div><!-- /.blog-card -->
+  
+            <div class="blog-card spring-fever" style="background-image: url(./img/others-pubmats.jpg); background-size: cover;">
+              <div class="title-content">
+                <h3><a href="#">PUBMATS, LOGOS, ICONS</a></h3>
+              </div>
+              <div class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                <a href="#">VIEW</span></a>
+              </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div><!-- /.blog-card -->
+
+            <div class="blog-card spring-fever" style="background-image: url(./img/others-drawing.jpg); background-size: cover;">
+              <div class="title-content">
+                <h3><a href="#">DRAWINGS</a></h3>
+              </div>
+              <div class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                <a href="#">VIEW</span></a>
+              </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div><!-- /.blog-card -->
         </section>
         <section class="section s9"  data-anchor="ninthPage">
-          <img src="./img/end.png" alt="end" class="end"></img>
-        </section>
-        <section class="section s9">
-            <h1>Content</h1>
-            <div class="description"></div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas a sequi deserunt optio quaerat ipsa magnam inventore! Nostrum, quasi reprehenderit.
-            </p>
-            <P>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, rerum!
-            </P>
-            <img src="./img/1.jpg" alt="sample" class="sample"/>
-            <img src="./img/2.jpg" alt="sample" class="sample"/>
-            <img src="./img/3.jpg" alt="sample" class="sample"/>
-        </section>
-        <section class="section s10">
-            <div class="area" >
-              <ul class="circles2">
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                </ul>
-          </div >
-        </section>
+            <ul class="circles2">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+              </ul>
+          <div class="contact-title">Contact Me!</div>
+          <div class="form-container">
+            <form action="">
+              <input type="text" id="name" placeholder="Name" required>
+              <input type="email" id="email" placeholder="Email Address" required>
+              <input type="text" id="phone" placeholder="Phone No." required>
+              <textarea id="message" rows="4" placeholder="Message"></textarea>
+              <button type="submit">SEND</button>
+            </form>
+          </div>
+        </section>  
     </div>
     <script src="./fullpage.min.js"></script>
     <script src="./app.js"></script>
+		
 </body>
 </html>

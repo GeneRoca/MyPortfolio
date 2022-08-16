@@ -2,7 +2,7 @@ new fullpage('#portfolio', {
     autoScrolling: true,
     navigation: true,
     navigationPosition: 'right',
-    sectionsColor: ['#010101', '#8bcfd0', '#1C2341', '#55BEC0', '#55BEC0', '#55BEC0', '#55BEC0', '#55BEC0', '#55BEC0'],
+    sectionsColor: ['#030303', '#030303', '#030303', '#030303', '#030303', '#030303', '#030303', '#030303', '#030303'],
     anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
     fitToSection: false
 })
